@@ -134,7 +134,7 @@ footer p{
 
 /* my mobile view goes here */
 
-@media (max-width:350px)  {
+@media (max-width:420px)  {
     *{
         margin: 0;
         padding: 0;
@@ -161,7 +161,7 @@ footer p{
     }
     header h3{
         color: white;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 100;
     }
     header nav{
@@ -169,7 +169,7 @@ footer p{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 6px;
+        gap: 15px;
     }
     header nav a {
         color: white;
