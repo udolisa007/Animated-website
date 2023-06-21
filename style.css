@@ -168,7 +168,7 @@ footer p{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 15px;
+        gap: 8px;
     }
     header nav a {
         color: white;
