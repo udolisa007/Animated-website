@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+header nav{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+header nav .active{
+  color: darkorange;
+}
+header nav a:hover{
+    color: darkorange;
+}
+/* main style rule start here */
+
+main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("./image/light.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-left:50px ;
+    font-size: 50px;
+    font-weight: 600;
+    transition: all ease .5s;
+    animation: fading;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+.banner h1 b{
+    color: gold;
+    font-size: 90px;
+    letter-spacing: 8px;
+    transition: all ease .5s;
+    animation: colorful;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+}
+footer p{
+    color: white;
+    font-size: 10px;
+    text-align:center;
+}
+
+/* keyframe for my animation goes here */
+@keyframes colorful{
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: white;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: white;
+    }
+    100%{
+        color: yellow;
+    }
+}
+@keyframes fading{
+    0%{background-image: url("./image/light.jpg");
+        color: white;
+    }
+    25%{background-image: url("./image/eye.jpg");
+        color: yellow;
+    }
+    50%{background-image: url("./image/lamp.jpg");
+        color: white;
+    }
+    75%{background-image: url("./image/road.jpg");
+        color: yellow;
+    }
+    100%{background-image: url("./image/tree.jpg");
+        color: black;
+    }
+    
+}
