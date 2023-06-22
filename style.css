@@ -165,11 +165,11 @@ footer p{
         font-weight: 100;
     }
     header nav{
-        width: 60%;
+        width: 30%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 15px;
+        gap: 7px;
     }
     header nav a {
         color: white;
