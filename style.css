@@ -134,7 +134,7 @@ footer p{
 
 /* my mobile view goes here */
 
-@media (max-width: 380px 420px)  {
+@media (max-width: 380px )  {
     *{
         margin: 0;
         padding: 0;
